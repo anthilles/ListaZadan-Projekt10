@@ -1,0 +1,54 @@
+body {
+    background: yellow;
+}
+
+.inbox {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 0 auto;
+    background: white;
+    border: solid 1px grey;
+    border-radius: 3%;
+}
+
+.item {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    border-left: none;
+    border-right: none;
+    border-top: solid 1px grey;
+/*    border-bottom: solid 1px grey;*/
+}
+
+.item:first-child {
+    border-top: none;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.item:hover{
+    background: grey;
+}
+
+input[type='checkbox'] {
+    margin: auto 10px;
+    display: flex;
+}
+
+.item input[type='checkbox'] {
+     background: black;
+}
+
+input:checked + p {
+    text-decoration: line-through;
+}
+
+/*
+input + p{
+    padding: 0 auto;
+}*/
